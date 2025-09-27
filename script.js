@@ -11,7 +11,7 @@ function updateUI() {
 
   // Show/Hide Clear button
   if (count > 0) {
-    clearBtn.style.display = "block";
+    clearBtn.style.display = "inline-block";
   } else {
     clearBtn.style.display = "none";
   }
@@ -30,7 +30,6 @@ decBtn.addEventListener("click", () => {
     count--;
     updateUI();
   } else {
-    // Show error if trying to decrement below 0
     errorEl.style.display = "block";
   }
 });
@@ -40,5 +39,5 @@ clearBtn.addEventListener("click", () => {
   updateUI();
 });
 
-// Initialize UI
+// Initialize
 updateUI();
