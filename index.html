@@ -3,21 +3,23 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Counter App</title>
+  <title>Counter using HTML</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <div class="container">
-    <h2>Counter App</h2>
-    <div class="counter-box">
-      <button id="decrement">-</button>
-      <div id="count">0</div>
-      <button id="increment">+</button>
+    <h1>Counter using HTML</h1>
+    <p>Your Current Count is : <span id="count">0</span></p>
+    <hr />
+    <p id="error" class="error">Error : Cannot go below 0</p>
+
+    <div class="buttons">
+      <button id="decrement">Decrement</button>
+      <button id="increment">Increment</button>
+      <button id="clear" style="display: none;">Clear</button>
     </div>
-    <button id="clear" style="display: none;">Clear</button>
-    <p id="error" class="error">❌ Count cannot be less than 0</p>
   </div>
-  
+
   <script src="script.js"></script>
 </body>
 </html>
